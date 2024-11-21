@@ -651,8 +651,8 @@ public with sharing class SOQL {
         if (!closedWonOpps.isEmpty()) {
           update closedWonOpps;
       }
-        }
-     
+        
+      }
 
 
       
