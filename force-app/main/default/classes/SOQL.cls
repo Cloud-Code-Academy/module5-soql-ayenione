@@ -186,7 +186,7 @@ public with sharing class SOQL {
 
      List<Case> casesFiltered =   [SELECT Id,  Status, Subject, Origin FROM  Case WHERE Origin NOT IN ('Web', 'Email', NULL)];
         
-     return casesFiltered; // Replace null with the variable you used to store the result
+     return casesFiltered; 
     }
    
     /**
