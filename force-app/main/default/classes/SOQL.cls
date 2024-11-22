@@ -564,13 +564,11 @@ public with sharing class SOQL {
 
           insert clonedLineItems;
 
-          System.debug('Cloned Opportunity Line Items inserted successfully: ' + clonedLineItems.size());
+          
         }
-         else {
-           
-          System.debug('No Opportunity Line Items to insert.');
+       
         }
-    }
+    
     
     /**
      * Question 24
@@ -602,7 +600,6 @@ public with sharing class SOQL {
         List<Opportunity> closedWonOpps = getOpportunityDetailsForClosedWon();
 
         // Create a set of Account Ids from the Opportunities
-
        
         Set<Id> acctIdsFromOpps = new Set<Id>();
         
@@ -634,8 +631,6 @@ public with sharing class SOQL {
           }
         }
  
-        
-        
         // Loop through each Opportunity
           for(Opportunity opp : closedWonOpps){
 
@@ -654,6 +649,4 @@ public with sharing class SOQL {
         
       }
 
-
-      
 }
